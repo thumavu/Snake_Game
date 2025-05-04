@@ -38,7 +38,7 @@ snake_class::snake_class(){
     food.width = 0; 
     food.height = 0;
 
-    // will represent the snake. and will push back an allement to an array
+    // will represent the snake. and will push back an alement to an array
     for (int i = 0; i < 4; i++){
         snake.push_back(snakepart(40 + i, 10)); 
     }
@@ -118,7 +118,7 @@ bool snake_class::collision(){
         if (snake[0].width == snake[i].width && snake[i].height == snake[0].height)
             return true;
     /*  
-        if the head collides with the FOOD the get is true, 
+        if the head collides with the FOOD then get is true, 
         We update the position of the food and
         the points of the food, same as the size of the snake
     */  
